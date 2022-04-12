@@ -1,0 +1,44 @@
+@import '~antd/dist/antd.css';
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    /*overflow: hidden;*/
+    background-color: #cbcbcb;
+}
+.container{
+    /**/
+    background-color: #cbcbcb;
+    /**/
+    display: grid;
+    grid-template-columns: repeat(14,10fr); /*分为4列*/
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+}
+.side{
+    /*background-color: #e6e6e6;*/
+    /**/
+    grid-column: 1/4; /*占第1列，这是不包括2*/
+    /**/
+    /*position: fixed;*/
+    /*width: 24%;*/
+    height: 100%;
+}
+.side>*{
+    /*color: red;*/
+}
+.content{
+    /*padding-right: 50px;*/
+    /*background-color: #ffffff;*/
+    /**/
+    grid-column: 4/15; /*占2 3 4，不包括5这三列*/
+    /**/
+}
+/* ====================================================== */
+.ant-comment-content-author-time{
+    color: black;
+}
+.ant-comment-content-author-name{
+    color: black;
+}

@@ -1,0 +1,27 @@
+/* Button */
+.myButton{
+    background-color: transparent;
+    font-size: 20px;
+    color: black;
+    position: relative; /*!!!!!!!!!!!!*/
+}
+.myButtonChecked{
+    background-color: transparent;
+    font-size: 20px;
+    color: red;
+    position: relative; /*!!!!!!!!!!!!*/
+}
+.myButton::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    bottom: -1px;
+    left: 1px;
+    right: 1px;
+    transform: scaleX(0);
+    background-color: #7ac143;
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.myButton:hover::after{
+    transform: scaleX(1);
+}
